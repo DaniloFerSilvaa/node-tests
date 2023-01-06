@@ -23,5 +23,14 @@ describe('Testing Math library', () => {
           const response = Math.mut(5, 10);
           expect(response).toBe(50)
      });
+
+     it.only('Contar o nome', () => {
+          const response = {
+               email: 'danilo@gmail.com',
+               nome: 'danilo',
+               curso: 'nodeJs'
+          }
+          expect(response).toHaveProperty('nome');
+     });
 })
 
