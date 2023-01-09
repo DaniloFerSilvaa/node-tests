@@ -24,7 +24,7 @@ describe('Testing Math library', () => {
           expect(response).toBe(50)
      });
 
-     it.only('Contar o nome', () => {
+     it('Contar o nome', () => {
           const response = {
                email: 'danilo@gmail.com',
                nome: 'danilo',
@@ -34,3 +34,21 @@ describe('Testing Math library', () => {
      });
 })
 
+describe.only('Descrição geral', () => {
+     
+     let number: number = 0; 
+
+     beforeEach(()  => {
+         number = 0
+     });
+
+     it('Descrição do que tem que acontecer com o teste', () => {
+          number = Math.sum( number, 3 );
+          expect(number).toBe(3)
+     }),
+
+     it('Should subtract two numbers correctly', () => {
+          number = Math.sub(10, number);
+          expect(number).toBe(10)
+     });
+})

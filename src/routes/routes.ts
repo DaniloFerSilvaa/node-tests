@@ -8,4 +8,11 @@ router.get('/', ( req, res ) => {
 
 router.get('/ping', ApiController.ping)
 
+router.get('/ping', ApiController.ping);
+
+router.post('/register', ApiController.register);
+router.post('/login',  ApiController.login);
+
+router.get('/list', ApiController.list);
+
 export default router;
